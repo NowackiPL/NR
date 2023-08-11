@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<a href="{% url 'cars' %}">Pojazdy</a>
+
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://u.profitroom.pl/2019-granohotels-pl/thumb/1920x1080/uploads/AdobeStock_143022934.jpeg"
+           class="d-block w-100" alt="Gdańsk">
+    </div>
+    <div class="carousel-item">
+      <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/426605677.jpg?k=50bc89df1364ae27374482d045749bb3e8aafece6c9bfba66b844c8804e92d7f&o=&hp=1"
+           class="d-block w-100" alt="Sopot">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.worldisbeautiful.eu/up_files/2420_Gdynia-z-drona.jpg" class="d-block w-100" alt="Gdynia">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+{% endblock %}
